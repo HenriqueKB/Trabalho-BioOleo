@@ -1,0 +1,55 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  CLIENTE
+  MOTORISTA
+  GESTOR
+}
+
+enum StatusColeta {
+  PENDENTE
+  COLETADO
+  PAGO
+}
+
+model Usuario {
+  id        String   @id @default(uuid())
+  nome      String
+  cpf       String   @unique
+  email     String   @unique
+  senha     String
+  role      Role     @default(CLIENTE)
+  pix       String?
+  endereco  String?
+  criadoEm  DateTime @default(now())
+
+  // Relações
+  coletasSolicitadas Coleta[] @relation("ClienteColetas")
+  coletasRealizadas  Coleta[] @relation("MotoristaColetas")
+}
+
+model Coleta {
+  id                 String       @id @default(uuid())
+  codigoPET          String       @unique // ex: PET-9482
+  quantidadeGarrafas Int
+  enderecoColeta     String
+  status             StatusColeta @default(PENDENTE)
+
+  // Cliente que pediu a coleta
+  clienteId          String
+  cliente            Usuario      @relation("ClienteColetas", fields: [clienteId], references: [id])
+
+  // Motorista que realizou a recolha no local
+  motoristaId        String?
+  motorista          Usuario?     @relation("MotoristaColetas", fields: [motoristaId], references: [id])
+
+  dataSolicitacao    DateTime     @default(now())
+  dataColeta         DateTime?
+  dataPagamento      DateTime?
+}
