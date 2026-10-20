@@ -5,7 +5,7 @@ const router = express.Router();
 const coletaRoutes = require('./coletaRoutes');
 const usuarioRoutes = require('./usuarioRoutes');
 
-router.use('/usuarios', usuarioRoutes);
 router.use('/coletas', coletaRoutes);
+router.use('/usuarios', usuarioRoutes);
 
 module.exports = router;

@@ -21,7 +21,7 @@
       ],
       "body": {
         "type": "json",
-        "raw": "{\n  \"nome\": \"João Silva\",\n  \"email\": \"joao@email.com\",\n  \"senha\": \"123456password\",\n  \"cpf\": \"111.222.333-44\",\n  \"role\": \"CLIENTE\",\n  \"endereco\": \"Rua das Flores, 123\"\n}"
+        "raw": "{\n  \"nome\": \"Micheel Temerr\",\n  \"email\": \"carlos@email.com\",\n  \"senha\": \"123456password\",\n  \"cpf\": \"444.666.777-88\",\n  \"role\": \"MOTORISTA\",\n  \"pix\": \"michel@pix.com\"\n}"
       },
       "auth": {
         "type": "none"
@@ -41,22 +41,21 @@
       "certificateConfig": null,
       "inheritCertificate": false,
       "response": {
-        "status": 404,
-        "statusText": "Not Found",
+        "status": 409,
+        "statusText": "Conflict",
         "headers": {
           "access-control-allow-origin": "*",
           "connection": "keep-alive",
-          "content-length": "159",
-          "content-security-policy": "default-src 'none'",
-          "content-type": "text/html; charset=utf-8",
-          "date": "Tue, 20 Oct 2026 13:51:03 GMT",
+          "content-length": "41",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Tue, 20 Oct 2026 14:00:45 GMT",
+          "etag": "W/\"29-O4ZNXsRRh1VXxSsYZBB388n4ziU\"",
           "keep-alive": "timeout=5",
-          "x-content-type-options": "nosniff",
           "x-powered-by": "Express"
         },
-        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/usuarios/signup</pre>\n</body>\n</html>\n",
-        "time": 11,
-        "size": 159,
+        "body": "{\"error\":\"Email ou CPF já cadastrados.\"}",
+        "time": 1513,
+        "size": 41,
         "actualRequest": {
           "method": "POST",
           "url": "http://localhost:5000/api/usuarios/signup",
@@ -64,7 +63,7 @@
             "Accept": "application/json",
             "Content-Type": "application/json"
           },
-          "body": "{\n  \"nome\": \"João Silva\",\n  \"email\": \"joao@email.com\",\n  \"senha\": \"123456password\",\n  \"cpf\": \"111.222.333-44\",\n  \"role\": \"CLIENTE\",\n  \"endereco\": \"Rua das Flores, 123\"\n}",
+          "body": "{\n  \"nome\": \"Micheel Temerr\",\n  \"email\": \"carlos@email.com\",\n  \"senha\": \"123456password\",\n  \"cpf\": \"444.666.777-88\",\n  \"role\": \"MOTORISTA\",\n  \"pix\": \"michel@pix.com\"\n}",
           "protocol": "HTTP/1.1",
           "certificateNames": "System Trust Store"
         },
@@ -80,7 +79,7 @@
           },
           {
             "name": "HTTP Request",
-            "duration": 11
+            "duration": 1513
           },
           {
             "name": "Post-processing",
