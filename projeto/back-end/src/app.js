@@ -1,7 +1,7 @@
 /*Configuração de Middlewares e prefixos de rotas*/
 const express = require('express');
 const cors = require('cors');
-const routes = require('./routes');
+const routes = require('./routes', './routes/coletaRoutes.js');
 
 const app = express();
 

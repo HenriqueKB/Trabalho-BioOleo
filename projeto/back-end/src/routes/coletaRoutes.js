@@ -10,3 +10,12 @@ router.put('/:id/coletar', coletaController.confirmarColeta);
 router.put('/:id/pagar', coletaController.confirmarPagamento);
 
 module.exports = router;
+
+
+/*
+Rotas pra Testar:
+GET de coletas: http://localhost:5000/api/coletas
+POST de coletas(solicitar coleta):  http://localhost:5000/api/coletas
+PUT pra confirmar coleta: http://localhost:5000/api/coletas/:id/coletar
+PUT pra confirmar pagamento: http://localhost:5000/api/coletas/:id/pagar
+*/

@@ -110,7 +110,7 @@
       "tabKind": "request",
       "name": "New Request",
       "method": "GET",
-      "url": "http://localhost:5000/http://localhost:5000/",
+      "url": "http://localhost:5000/api/coletas",
       "params": [],
       "headers": [
         {
@@ -146,23 +146,51 @@
       "certificateConfig": null,
       "inheritCertificate": false,
       "response": {
-        "status": 404,
-        "statusText": "Not Found",
+        "status": 200,
+        "statusText": "OK",
         "headers": {
           "access-control-allow-origin": "*",
           "connection": "keep-alive",
-          "content-length": "161",
-          "content-security-policy": "default-src 'none'",
-          "content-type": "text/html; charset=utf-8",
-          "date": "Tue, 20 Oct 2026 11:36:05 GMT",
+          "content-length": "2",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Tue, 20 Oct 2026 11:43:04 GMT",
+          "etag": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\"",
           "keep-alive": "timeout=5",
-          "x-content-type-options": "nosniff",
           "x-powered-by": "Express"
         },
-        "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /http://localhost:5000/</pre>\n</body>\n</html>\n",
-        "time": 12,
-        "size": 161,
-        "cookies": []
+        "body": "[]",
+        "time": 2733,
+        "size": 2,
+        "actualRequest": {
+          "method": "GET",
+          "url": "http://localhost:5000/api/coletas",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 2733
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
       },
       "error": null,
       "loading": false,
