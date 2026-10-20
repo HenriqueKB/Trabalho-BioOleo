@@ -2,7 +2,7 @@
 /*OBS: caso for alterar fique atento com o controller também*/
 const express = require('express');
 const router = express.Router();
-const coletaController = require('../controllers/coletaController');
+const coletaController = require('../controllers/coletaController.js');
 
 router.post('/', coletaController.solicitarColeta);
 router.get('/', coletaController.listarColetas);
