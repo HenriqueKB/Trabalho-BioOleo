@@ -1220,5 +1220,1516 @@
       "size": 41,
       "cookies": []
     }
+  },
+  {
+    "id": "1793727310445",
+    "timestamp": 1793727310445,
+    "request": {
+      "id": "1793727310418",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "142",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:35:10 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api</pre>\n</body>\n</html>\n",
+      "time": 21,
+      "size": 142,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727425979",
+    "timestamp": 1793727425979,
+    "request": {
+      "id": "1793727425911",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 401,
+      "statusText": "Unauthorized",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "48",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:37:05 GMT",
+        "etag": "W/\"30-0QsUsLUNcXdOHkIy17wL2KaFqf0\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"Acesso negado. Token não fornecido.\"}",
+      "time": 65,
+      "size": 48,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727589402",
+    "timestamp": 1793727589402,
+    "request": {
+      "id": "1793727587390",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/signup",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"John Teste\",\n  \"email\": \"john@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"111.322.333-44\",\n  \"role\": \"CLIENTE\",\n  \"endereco\": \"Rua das Flores, 124\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "525",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:39:49 GMT",
+        "etag": "W/\"20d-SB9BtGLszV8oDT4US0sQMJ7zI14\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Utilizador registado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MzM2M2I1LTIxZDAtNDBhMy05NDZlLTI1MjIwOGZkMWUwMyIsImVtYWlsIjoiam9obkBlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzcyNzU4OSwiZXhwIjoxNzkzNzMxMTg5fQ.51Gna1OF2wivRKtGRi5yoaweGg6kfaUlWmEfZHRLxqA\",\"usuario\":{\"id\":\"973363b5-21d0-40a3-946e-252208fd1e03\",\"nome\":\"John Teste\",\"cpf\":\"111.322.333-44\",\"email\":\"john@email.com\",\"role\":\"CLIENTE\",\"pix\":null,\"endereco\":\"Rua das Flores, 124\",\"criadoEm\":\"2026-11-03T17:39:49.161Z\"}}",
+      "time": 2007,
+      "size": 525,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727710582",
+    "timestamp": 1793727710582,
+    "request": {
+      "id": "1793727710561",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MzM2M2I1LTIxZDAtNDBhMy05NDZlLTI1MjIwOGZkMWUwMyIsImVtYWlsIjoiam9obkBlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzcyNzU4OSwiZXhwIjoxNzkzNzMxMTg5fQ.51Gna1OF2wivRKtGRi5yoaweGg6kfaUlWmEfZHRLxqA\n",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MzM2M2I1LTIxZDAtNDBhMy05NDZlLTI1MjIwOGZkMWUwMyIsImVtYWlsIjoiam9obkBlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzcyNzU4OSwiZXhwIjoxNzkzNzMxMTg5fQ.51Gna1OF2wivRKtGRi5yoaweGg6kfaUlWmEfZHRLxqA\n"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "143",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:41:50 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api</pre>\n</body>\n</html>\n",
+      "time": 13,
+      "size": 143,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727725483",
+    "timestamp": 1793727725483,
+    "request": {
+      "id": "1793727725471",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MzM2M2I1LTIxZDAtNDBhMy05NDZlLTI1MjIwOGZkMWUwMyIsImVtYWlsIjoiam9obkBlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzcyNzU4OSwiZXhwIjoxNzkzNzMxMTg5fQ.51Gna1OF2wivRKtGRi5yoaweGg6kfaUlWmEfZHRLxqA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MzM2M2I1LTIxZDAtNDBhMy05NDZlLTI1MjIwOGZkMWUwMyIsImVtYWlsIjoiam9obkBlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzcyNzU4OSwiZXhwIjoxNzkzNzMxMTg5fQ.51Gna1OF2wivRKtGRi5yoaweGg6kfaUlWmEfZHRLxqA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: Request with GET/HEAD method cannot have body.",
+      "time": 8,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727731117",
+    "timestamp": 1793727731117,
+    "request": {
+      "id": "1793727731100",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MzM2M2I1LTIxZDAtNDBhMy05NDZlLTI1MjIwOGZkMWUwMyIsImVtYWlsIjoiam9obkBlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzcyNzU4OSwiZXhwIjoxNzkzNzMxMTg5fQ.51Gna1OF2wivRKtGRi5yoaweGg6kfaUlWmEfZHRLxqA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MzM2M2I1LTIxZDAtNDBhMy05NDZlLTI1MjIwOGZkMWUwMyIsImVtYWlsIjoiam9obkBlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzcyNzU4OSwiZXhwIjoxNzkzNzMxMTg5fQ.51Gna1OF2wivRKtGRi5yoaweGg6kfaUlWmEfZHRLxqA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 403,
+      "statusText": "Forbidden",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "66",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:42:11 GMT",
+        "etag": "W/\"42-dJdbN2k5rkCQyT/pfQrTkhjFC2U\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"Acesso negado. Perfil sem permissão para esta ação.\"}",
+      "time": 13,
+      "size": 66,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727762610",
+    "timestamp": 1793727762610,
+    "request": {
+      "id": "1793727760886",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/signup",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"John2 Teste\",\n  \"email\": \"john2@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"211.322.333-44\",\n  \"role\": \"GESTOR\",\n  \"endereco\": \"Rua das Rosas, 124\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "525",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:42:42 GMT",
+        "etag": "W/\"20d-lAsYRXDSJ0XwBEV+HXOa67PLhPw\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Utilizador registado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzcyNzc2MiwiZXhwIjoxNzkzNzMxMzYyfQ.TnfGCMl2pD4AkA-GMkJ_stz-CIa8jPQ-AvFbIYdlgWU\",\"usuario\":{\"id\":\"0f588097-b848-4d1b-9541-fc773eb35536\",\"nome\":\"John2 Teste\",\"cpf\":\"211.322.333-44\",\"email\":\"john2@email.com\",\"role\":\"GESTOR\",\"pix\":null,\"endereco\":\"Rua das Rosas, 124\",\"criadoEm\":\"2026-11-03T17:42:42.380Z\"}}",
+      "time": 1720,
+      "size": 525,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727789953",
+    "timestamp": 1793727789953,
+    "request": {
+      "id": "1793727789938",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MzM2M2I1LTIxZDAtNDBhMy05NDZlLTI1MjIwOGZkMWUwMyIsImVtYWlsIjoiam9obkBlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzcyNzU4OSwiZXhwIjoxNzkzNzMxMTg5fQ.51Gna1OF2wivRKtGRi5yoaweGg6kfaUlWmEfZHRLxqA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk3MzM2M2I1LTIxZDAtNDBhMy05NDZlLTI1MjIwOGZkMWUwMyIsImVtYWlsIjoiam9obkBlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzcyNzU4OSwiZXhwIjoxNzkzNzMxMTg5fQ.51Gna1OF2wivRKtGRi5yoaweGg6kfaUlWmEfZHRLxqA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 403,
+      "statusText": "Forbidden",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "66",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:43:09 GMT",
+        "etag": "W/\"42-dJdbN2k5rkCQyT/pfQrTkhjFC2U\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"Acesso negado. Perfil sem permissão para esta ação.\"}",
+      "time": 11,
+      "size": 66,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727798018",
+    "timestamp": 1793727798018,
+    "request": {
+      "id": "1793727798003",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzcyNzc2MiwiZXhwIjoxNzkzNzMxMzYyfQ.TnfGCMl2pD4AkA-GMkJ_stz-CIa8jPQ-AvFbIYdlgWU\"",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzcyNzc2MiwiZXhwIjoxNzkzNzMxMzYyfQ.TnfGCMl2pD4AkA-GMkJ_stz-CIa8jPQ-AvFbIYdlgWU\""
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 401,
+      "statusText": "Unauthorized",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "40",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:43:18 GMT",
+        "etag": "W/\"28-F6b7+NAMdlg4smSAUg4ecGAnubM\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"Token inválido ou expirado.\"}",
+      "time": 11,
+      "size": 40,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727834475",
+    "timestamp": 1793727834475,
+    "request": {
+      "id": "1793727834455",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/logini",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"john2@email.com\",\n  \"senha\": \"1234pass\",\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 400,
+      "statusText": "Bad Request",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "1163",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:43:54 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>SyntaxError: Expected double-quoted property name in JSON at position 55 (line 4 column 1)<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (C:\\programa\\UNIPAR\\bio-oleo\\projeto\\back-end\\node_modules\\body-parser\\lib\\types\\json.js:91:21)<br> &nbsp; &nbsp;at C:\\programa\\UNIPAR\\bio-oleo\\projeto\\back-end\\node_modules\\body-parser\\lib\\read.js:162:18<br> &nbsp; &nbsp;at AsyncResource.runInAsyncScope (node:async_hooks:214:14)<br> &nbsp; &nbsp;at invokeCallback (C:\\programa\\UNIPAR\\bio-oleo\\projeto\\back-end\\node_modules\\raw-body\\index.js:238:16)<br> &nbsp; &nbsp;at done (C:\\programa\\UNIPAR\\bio-oleo\\projeto\\back-end\\node_modules\\raw-body\\index.js:227:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (C:\\programa\\UNIPAR\\bio-oleo\\projeto\\back-end\\node_modules\\raw-body\\index.js:287:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (node:events:518:28)<br> &nbsp; &nbsp;at endReadableNT (node:internal/streams/readable:1698:12)<br> &nbsp; &nbsp;at process.processTicksAndRejections (node:internal/process/task_queues:90:21)</pre>\n</body>\n</html>\n",
+      "time": 18,
+      "size": 1163,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727839528",
+    "timestamp": 1793727839528,
+    "request": {
+      "id": "1793727839513",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/logini",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"john2@email.com\",\n  \"senha\": \"1234pass\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "159",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:43:59 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/usuarios/logini</pre>\n</body>\n</html>\n",
+      "time": 12,
+      "size": 159,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727856951",
+    "timestamp": 1793727856951,
+    "request": {
+      "id": "1793727856937",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/logini",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"john2@email.com\",\n  \"senha\": \"1234pass\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "159",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:44:16 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/usuarios/logini</pre>\n</body>\n</html>\n",
+      "time": 10,
+      "size": 159,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727857746",
+    "timestamp": 1793727857746,
+    "request": {
+      "id": "1793727857731",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/logini",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"john2@email.com\",\n  \"senha\": \"1234pass\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "159",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:44:17 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/usuarios/logini</pre>\n</body>\n</html>\n",
+      "time": 12,
+      "size": 159,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727863630",
+    "timestamp": 1793727863630,
+    "request": {
+      "id": "1793727862295",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"email\": \"john2@email.com\",\n  \"senha\": \"1234pass\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "519",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:44:23 GMT",
+        "etag": "W/\"207-W3YDHCoSMHe79XM6O/d1mtpDSus\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzcyNzg2MywiZXhwIjoxNzkzNzMxNDYzfQ.eaTBUupu5Tl04_0uFlX5ihyZhxQpfw51UZtB_VAYXeI\",\"usuario\":{\"id\":\"0f588097-b848-4d1b-9541-fc773eb35536\",\"nome\":\"John2 Teste\",\"cpf\":\"211.322.333-44\",\"email\":\"john2@email.com\",\"role\":\"GESTOR\",\"pix\":null,\"endereco\":\"Rua das Rosas, 124\",\"criadoEm\":\"2026-11-03T17:42:42.380Z\"}}",
+      "time": 1332,
+      "size": 519,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793727878452",
+    "timestamp": 1793727878452,
+    "request": {
+      "id": "1793727876192",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzcyNzg2MywiZXhwIjoxNzkzNzMxNDYzfQ.eaTBUupu5Tl04_0uFlX5ihyZhxQpfw51UZtB_VAYXeI",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzcyNzg2MywiZXhwIjoxNzkzNzMxNDYzfQ.eaTBUupu5Tl04_0uFlX5ihyZhxQpfw51UZtB_VAYXeI"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "2",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:44:38 GMT",
+        "etag": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[]",
+      "time": 2255,
+      "size": 2,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793728590926",
+    "timestamp": 1793728590926,
+    "request": {
+      "id": "1793728589153",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/signup",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "    {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "558",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:56:30 GMT",
+        "etag": "W/\"22e-JatGi0ohbh1WXafPNXBu62A8hEo\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Utilizador registado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzNzI4NTkwLCJleHAiOjE3OTM3MzIxOTB9.M-HMQJVd0JpietsbCYvyfDAzIC1j4IXRZtFejOIz6fY\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
+      "time": 1770,
+      "size": 558,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793728603414",
+    "timestamp": 1793728603414,
+    "request": {
+      "id": "1793728602149",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "    {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "552",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:56:43 GMT",
+        "etag": "W/\"228-0mph17M36R86JnEfNhvkDXUMqI8\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzNzI4NjAzLCJleHAiOjE3OTM3MzIyMDN9.fn7u8vrwltkg0eioPAEoSStbZhDVzMKJ-EO0M75rHgw\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
+      "time": 1261,
+      "size": 552,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793728616849",
+    "timestamp": 1793728616849,
+    "request": {
+      "id": "1793728616833",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzNzI4NjAzLCJleHAiOjE3OTM3MzIyMDN9.fn7u8vrwltkg0eioPAEoSStbZhDVzMKJ-EO0M75rHgw",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzNzI4NjAzLCJleHAiOjE3OTM3MzIyMDN9.fn7u8vrwltkg0eioPAEoSStbZhDVzMKJ-EO0M75rHgw"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 403,
+      "statusText": "Forbidden",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "66",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 17:56:56 GMT",
+        "etag": "W/\"42-dJdbN2k5rkCQyT/pfQrTkhjFC2U\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"Acesso negado. Perfil sem permissão para esta ação.\"}",
+      "time": 12,
+      "size": 66,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731468038",
+    "timestamp": 1793731468038,
+    "request": {
+      "id": "1793731466487",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nome\": \"João Silva\",\n  \"email\": \"joao@email.com\",\n  \"senha\": \"123456password\",\n  \"cpf\": \"111.222.333-44\",\n  \"role\": \"CLIENTE\",\n  \"endereco\": \"Rua das Flores, 123\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "520",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 18:44:28 GMT",
+        "etag": "W/\"208-ugmWnMFSHdESxVa1S5V/724s7ns\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4\",\"usuario\":{\"id\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"nome\":\"João Silva\",\"cpf\":\"111.222.333-44\",\"email\":\"joao@email.com\",\"role\":\"CLIENTE\",\"pix\":null,\"endereco\":\"Rua das Flores, 123\",\"criadoEm\":\"2026-10-20T13:56:05.588Z\"}}",
+      "time": 1547,
+      "size": 520,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731579515",
+    "timestamp": 1793731579515,
+    "request": {
+      "id": "1793731579483",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 400,
+      "statusText": "Bad Request",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "883",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 18:46:19 GMT",
+        "etag": "W/\"373-dFw4VGsSfH4y4AKrOVM03z+ug/s\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"\\nInvalid `prisma.coleta.create()` invocation in\\nC:\\\\programa\\\\UNIPAR\\\\bio-oleo\\\\projeto\\\\back-end\\\\src\\\\controllers\\\\coletaController.js:11:40\\n\\n   8 const { clienteId, quantidadeGarrafas, enderecoColeta } = req.body;\\n   9 const codigoPET = `PET-${Math.floor(1000 + Math.random() * 9000)}`;\\n  10 \\n→ 11 const coleta = await prisma.coleta.create({\\n       data: {\\n         codigoPET: \\\"PET-5120\\\",\\n         quantidadeGarrafas: 12,\\n         enderecoColeta: \\\"Rua das Flores, 123 - Bairro Centro\\\",\\n         clienteId: undefined,\\n     +   cliente: {\\n     +     create: UsuarioCreateWithoutColetasSolicitadasInput | UsuarioUncheckedCreateWithoutColetasSolicitadasInput,\\n     +     connectOrCreate: UsuarioCreateOrConnectWithoutColetasSolicitadasInput,\\n     +     connect: UsuarioWhereUniqueInput\\n     +   }\\n       }\\n     })\\n\\nArgument `cliente` is missing.\"}",
+      "time": 29,
+      "size": 883,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731619003",
+    "timestamp": 1793731619003,
+    "request": {
+      "id": "1793731617651",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "321",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 18:46:59 GMT",
+        "etag": "W/\"141-L3pzs7HlRk82cp0WrxARFC36caE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"id\":\"58c187a1-24f6-4402-9e17-62e28ac6ca4b\",\"codigoPET\":\"PET-8065\",\"quantidadeGarrafas\":12,\"enderecoColeta\":\"Rua das Flores, 123 - Bairro Centro\",\"status\":\"PENDENTE\",\"clienteId\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"motoristaId\":null,\"dataSolicitacao\":\"2026-11-03T18:46:57.806Z\",\"dataColeta\":null,\"dataPagamento\":null}",
+      "time": 1350,
+      "size": 321,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731655390",
+    "timestamp": 1793731655390,
+    "request": {
+      "id": "1793731655370",
+      "name": "New Request",
+      "method": "POST",
+      "url": "/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: Failed to parse URL from /api/usuarios/login",
+      "time": 17,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731662590",
+    "timestamp": 1793731662590,
+    "request": {
+      "id": "1793731662577",
+      "name": "New Request",
+      "method": "POST",
+      "url": "/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: Failed to parse URL from /api/usuarios/login",
+      "time": 10,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731677364",
+    "timestamp": 1793731677364,
+    "request": {
+      "id": "1793731675866",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "552",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 18:47:57 GMT",
+        "etag": "W/\"228-wpZXue5CIqltG+Jv0CTrKhEu38o\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzNzMxNjc3LCJleHAiOjE3OTM3MzUyNzd9.Q6plwXrNzWmfBzuzFljMPCpSAbYQuKV-VVQCMfLfhNQ\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
+      "time": 1494,
+      "size": 552,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731734286",
+    "timestamp": 1793731734286,
+    "request": {
+      "id": "1793731734274",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/minhas-coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: Request with GET/HEAD method cannot have body.",
+      "time": 9,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731743316",
+    "timestamp": 1793731743316,
+    "request": {
+      "id": "1793731743301",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/minhas-coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "157",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 18:49:03 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/minhas-coletas</pre>\n</body>\n</html>\n",
+      "time": 12,
+      "size": 157,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731760346",
+    "timestamp": 1793731760346,
+    "request": {
+      "id": "1793731760332",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/minhas-coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "157",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 18:49:20 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/minhas-coletas</pre>\n</body>\n</html>\n",
+      "time": 11,
+      "size": 157,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731849485",
+    "timestamp": 1793731849485,
+    "request": {
+      "id": "1793731849470",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api//coletas/minhas-coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "166",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 18:50:49 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api//coletas/minhas-coletas</pre>\n</body>\n</html>\n",
+      "time": 11,
+      "size": 166,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731853854",
+    "timestamp": 1793731853854,
+    "request": {
+      "id": "1793731853822",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas/minhas-coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 500,
+      "statusText": "Internal Server Error",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "1124",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 18:50:53 GMT",
+        "etag": "W/\"464-y2qE4DjH6ycwcxlocUa/nTTo6gQ\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"Erro ao buscar suas coletas: \\nInvalid `prisma.coleta.findMany()` invocation in\\nC:\\\\programa\\\\UNIPAR\\\\bio-oleo\\\\projeto\\\\back-end\\\\src\\\\controllers\\\\coletaController.js:50:47\\n\\n  47 try {\\n  48   const clienteId = req.usuario.id; // Extraído do JWT\\n  49 \\n→ 50   const minhasColetas = await prisma.coleta.findMany({\\n         where: {\\n           clienteId: \\\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\\\"\\n         },\\n         orderBy: {\\n           criadoEm: \\\"desc\\\",\\n           ~~~~~~~~\\n       ?   id?: SortOrder,\\n       ?   codigoPET?: SortOrder,\\n       ?   quantidadeGarrafas?: SortOrder,\\n       ?   enderecoColeta?: SortOrder,\\n       ?   status?: SortOrder,\\n       ?   clienteId?: SortOrder,\\n       ?   motoristaId?: SortOrder | SortOrderInput,\\n       ?   dataSolicitacao?: SortOrder,\\n       ?   dataColeta?: SortOrder | SortOrderInput,\\n       ?   dataPagamento?: SortOrder | SortOrderInput,\\n       ?   cliente?: UsuarioOrderByWithRelationInput,\\n       ?   motorista?: UsuarioOrderByWithRelationInput\\n         }\\n       })\\n\\nUnknown argument `criadoEm`. Available options are marked with ?.\"}",
+      "time": 29,
+      "size": 1124,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793731989023",
+    "timestamp": 1793731989023,
+    "request": {
+      "id": "1793731987536",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas/minhas-coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "323",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 03 Nov 2026 18:53:09 GMT",
+        "etag": "W/\"143-1ivs7IsS3UjNe8PjmiS1E/qC7qQ\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"58c187a1-24f6-4402-9e17-62e28ac6ca4b\",\"codigoPET\":\"PET-8065\",\"quantidadeGarrafas\":12,\"enderecoColeta\":\"Rua das Flores, 123 - Bairro Centro\",\"status\":\"PENDENTE\",\"clienteId\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"motoristaId\":null,\"dataSolicitacao\":\"2026-11-03T18:46:57.806Z\",\"dataColeta\":null,\"dataPagamento\":null}]",
+      "time": 1484,
+      "size": 323,
+      "cookies": []
+    }
   }
 ]

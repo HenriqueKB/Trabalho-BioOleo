@@ -5,24 +5,26 @@ const prisma = require('../config/prisma');
 // Cliente: Solicitar recolha de óleo
 exports.solicitarColeta = async (req, res) => {
   try {
-    const { clienteId, quantidadeGarrafas, enderecoColeta } = req.body;
+    const clienteId = req.usuario.id; // Extraído do Token JWT
+    const { quantidadeGarrafas, enderecoColeta } = req.body;
+
+    // Gera um código PET único (ex: PET-4829) para satisfazer a constraint @unique
     const codigoPET = `PET-${Math.floor(1000 + Math.random() * 9000)}`;
 
-    const coleta = await prisma.coleta.create({
+    const novaColeta = await prisma.coleta.create({
       data: {
         codigoPET,
-        quantidadeGarrafas: Number(quantidadeGarrafas),
+        quantidadeGarrafas: parseInt(quantidadeGarrafas),
         enderecoColeta,
         clienteId
       }
     });
 
-    res.status(201).json(coleta);
-  } catch (err) {
-    res.status(400).json({ error: err.message });
+    return res.status(201).json(novaColeta);
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
   }
 };
-
 // Listar recolhas (Com filtro por status para Motorista e Gestor)
 exports.listarColetas = async (req, res) => {
   try {
@@ -40,7 +42,38 @@ exports.listarColetas = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+// 2. CLIENTE: Lista apenas as coletas solicitadas por ELE
+exports.listarMinhasColetas = async (req, res) => {
+  try {
+    const clienteId = req.usuario.id;
 
+    const minhasColetas = await prisma.coleta.findMany({
+      where: { clienteId },
+      orderBy: { dataSolicitacao: 'desc' } // ✅ Campo correto do Schema
+    });
+
+    return res.status(200).json(minhasColetas);
+  } catch (error) {
+    return res.status(500).json({ error: 'Erro ao buscar suas coletas: ' + error.message });
+  }
+};
+
+// 3. MOTORISTA: Lista apenas as coletas PENDENTES para recolha na rua
+exports.listarColetasPendentes = async (req, res) => {
+  try {
+    const coletasPendentes = await prisma.coleta.findMany({
+      where: { status: 'PENDENTE' },
+      include: {
+        cliente: { select: { nome: true, endereco: true } }
+      },
+      orderBy: { criadoEm: 'asc' } // As mais antigas primeiro
+    });
+
+    return res.status(200).json(coletasPendentes);
+  } catch (error) {
+    return res.status(500).json({ error: 'Erro ao buscar coletas pendentes: ' + error.message });
+  }
+};
 // Motorista: Confirmar recolha no local (Validação da garrafa PET)
 exports.confirmarColeta = async (req, res) => {
   try {

@@ -44,3 +44,27 @@ envie APENAS email e senha do usuário que quer testar aqui
   "senha": "123456password"
 }
 */
+
+
+/*
+ Usuários de teste:
+
+ GESTOR:
+  {
+  "nome": "John2 Teste",
+  "email": "john2@email.com",
+  "senha": "1234pass",
+  "cpf": "211.322.333-44",
+  "role": "GESTOR",
+  "endereco": "Rua das Rosas, 124"
+}
+  MOTORISTA:
+  {
+  "nome": "John Motorista",
+  "email": "johnmotorista@email.com",
+  "senha": "1234pass",
+  "cpf": "212.322.333-44",
+  "role": "MOTORISTA",
+  "endereco": "Rua dos Girassóis, 125"
+}
+ */ 

@@ -3,19 +3,30 @@
 const express = require('express');
 const router = express.Router();
 const coletaController = require('../controllers/coletaController.js');
+const { autenticar, autorizar } = require('../middlewares/authMiddleware.js')
 
-router.post('/', coletaController.solicitarColeta);
-router.get('/', coletaController.listarColetas);
-router.put('/:id/coletar', coletaController.confirmarColeta);
-router.put('/:id/pagar', coletaController.confirmarPagamento);
+router.use(autenticar);
 
+router.post('/coletas',  autorizar('CLIENTE'),coletaController.solicitarColeta);
+router.get('/', autorizar('GESTOR'), coletaController.listarColetas);
+router.put('/:id/coletar', autorizar('MOTORISTA'), coletaController.confirmarColeta);
+router.put('/:id/pagar', autorizar('GESTOR'), coletaController.confirmarPagamento);
+// --- ROTAS DO CLIENTE ---
+router.post('/', autorizar('CLIENTE'), coletaController.solicitarColeta);
+router.get('/minhas-coletas', autorizar('CLIENTE'), coletaController.listarMinhasColetas);
+
+// --- ROTAS DO MOTORISTA ---
+router.get('/pendentes', autorizar('MOTORISTA'), coletaController.listarColetasPendentes);
+router.put('/:id/coletar', autorizar('MOTORISTA'), coletaController.confirmarColeta);
 module.exports = router;
 
 
 /*
 Rotas pra Testar:
-GET de coletas: http://localhost:5000/api/coletas
-POST de coletas(solicitar coleta):  http://localhost:5000/api/coletas
-PUT pra confirmar coleta: http://localhost:5000/api/coletas/:id/coletar
-PUT pra confirmar pagamento: http://localhost:5000/api/coletas/:id/pagar
+GET de coletas (CLIENTE): http://localhost:5000/api/minhas-coletas
+POST de coletas (CLIENTE)(solicitar coleta):  http://localhost:5000/api/coletas
+PUT pra confirmar coleta e concluir(MOTORISTA): http://localhost:5000/api/coletas/:id/coletar
+PUT pra confirmar pagamento(GESTOR): http://localhost:5000/api/coletas/:id/pagar
+GET de coletas(GESTOR): http://localhost:5000/api/coletas
+
 */
