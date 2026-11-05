@@ -66,7 +66,7 @@ exports.listarColetasPendentes = async (req, res) => {
       include: {
         cliente: { select: { nome: true, endereco: true } }
       },
-      orderBy: { criadoEm: 'asc' } // As mais antigas primeiro
+      orderBy: { dataSolicitacao: 'asc' } // ✅ Trocado de criadoEm para dataSolicitacao
     });
 
     return res.status(200).json(coletasPendentes);

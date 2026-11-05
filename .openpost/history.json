@@ -2731,5 +2731,1251 @@
       "size": 323,
       "cookies": []
     }
+  },
+  {
+    "id": "1793899343400",
+    "timestamp": 1793899343400,
+    "request": {
+      "id": "1793899341490",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "552",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:22:23 GMT",
+        "etag": "W/\"228-YSXhzCtN29kC8bZd6QS3JNUatIo\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
+      "time": 1904,
+      "size": 552,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899352354",
+    "timestamp": 1793899352354,
+    "request": {
+      "id": "1793899352337",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas/minhas-coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 403,
+      "statusText": "Forbidden",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "66",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:22:32 GMT",
+        "etag": "W/\"42-dJdbN2k5rkCQyT/pfQrTkhjFC2U\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"Acesso negado. Perfil sem permissão para esta ação.\"}",
+      "time": 14,
+      "size": 66,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899358911",
+    "timestamp": 1793899358911,
+    "request": {
+      "id": "1793899358892",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 403,
+      "statusText": "Forbidden",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "66",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:22:38 GMT",
+        "etag": "W/\"42-dJdbN2k5rkCQyT/pfQrTkhjFC2U\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"Acesso negado. Perfil sem permissão para esta ação.\"}",
+      "time": 16,
+      "size": 66,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899426705",
+    "timestamp": 1793899426705,
+    "request": {
+      "id": "1793899426678",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas/pendentes",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 500,
+      "statusText": "Internal Server Error",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "1399",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:23:46 GMT",
+        "etag": "W/\"577-tU+9yhtEo9XSapLVdcxGCt1tfHw\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"Erro ao buscar coletas pendentes: \\nInvalid `prisma.coleta.findMany()` invocation in\\nC:\\\\programa\\\\UNIPAR\\\\bio-oleo\\\\projeto\\\\back-end\\\\src\\\\controllers\\\\coletaController.js:64:50\\n\\n  61 // 3. MOTORISTA: Lista apenas as coletas PENDENTES para recolha na rua\\n  62 exports.listarColetasPendentes = async (req, res) => {\\n  63   try {\\n→ 64     const coletasPendentes = await prisma.coleta.findMany({\\n           where: {\\n             status: \\\"PENDENTE\\\"\\n           },\\n           include: {\\n             cliente: {\\n               select: {\\n                 nome: true,\\n                 endereco: true\\n               }\\n             }\\n           },\\n           orderBy: {\\n             criadoEm: \\\"asc\\\",\\n             ~~~~~~~~\\n         ?   id?: SortOrder,\\n         ?   codigoPET?: SortOrder,\\n         ?   quantidadeGarrafas?: SortOrder,\\n         ?   enderecoColeta?: SortOrder,\\n         ?   status?: SortOrder,\\n         ?   clienteId?: SortOrder,\\n         ?   motoristaId?: SortOrder | SortOrderInput,\\n         ?   dataSolicitacao?: SortOrder,\\n         ?   dataColeta?: SortOrder | SortOrderInput,\\n         ?   dataPagamento?: SortOrder | SortOrderInput,\\n         ?   cliente?: UsuarioOrderByWithRelationInput,\\n         ?   motorista?: UsuarioOrderByWithRelationInput\\n           }\\n         })\\n\\nUnknown argument `criadoEm`. Available options are marked with ?.\"}",
+      "time": 23,
+      "size": 1399,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899430236",
+    "timestamp": 1793899430236,
+    "request": {
+      "id": "1793899430219",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas/pendentes",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 500,
+      "statusText": "Internal Server Error",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "1399",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:23:50 GMT",
+        "etag": "W/\"577-tU+9yhtEo9XSapLVdcxGCt1tfHw\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"error\":\"Erro ao buscar coletas pendentes: \\nInvalid `prisma.coleta.findMany()` invocation in\\nC:\\\\programa\\\\UNIPAR\\\\bio-oleo\\\\projeto\\\\back-end\\\\src\\\\controllers\\\\coletaController.js:64:50\\n\\n  61 // 3. MOTORISTA: Lista apenas as coletas PENDENTES para recolha na rua\\n  62 exports.listarColetasPendentes = async (req, res) => {\\n  63   try {\\n→ 64     const coletasPendentes = await prisma.coleta.findMany({\\n           where: {\\n             status: \\\"PENDENTE\\\"\\n           },\\n           include: {\\n             cliente: {\\n               select: {\\n                 nome: true,\\n                 endereco: true\\n               }\\n             }\\n           },\\n           orderBy: {\\n             criadoEm: \\\"asc\\\",\\n             ~~~~~~~~\\n         ?   id?: SortOrder,\\n         ?   codigoPET?: SortOrder,\\n         ?   quantidadeGarrafas?: SortOrder,\\n         ?   enderecoColeta?: SortOrder,\\n         ?   status?: SortOrder,\\n         ?   clienteId?: SortOrder,\\n         ?   motoristaId?: SortOrder | SortOrderInput,\\n         ?   dataSolicitacao?: SortOrder,\\n         ?   dataColeta?: SortOrder | SortOrderInput,\\n         ?   dataPagamento?: SortOrder | SortOrderInput,\\n         ?   cliente?: UsuarioOrderByWithRelationInput,\\n         ?   motorista?: UsuarioOrderByWithRelationInput\\n           }\\n         })\\n\\nUnknown argument `criadoEm`. Available options are marked with ?.\"}",
+      "time": 14,
+      "size": 1399,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899808627",
+    "timestamp": 1793899808627,
+    "request": {
+      "id": "1793899807028",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas/pendentes",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \"quantidadeGarrafas\": 12,\n  \"enderecoColeta\": \"Rua das Flores, 123 - Bairro Centro\"\n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "389",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:30:08 GMT",
+        "etag": "W/\"185-bALDepPuKDeWSXPMP4s5nG8BO+M\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"58c187a1-24f6-4402-9e17-62e28ac6ca4b\",\"codigoPET\":\"PET-8065\",\"quantidadeGarrafas\":12,\"enderecoColeta\":\"Rua das Flores, 123 - Bairro Centro\",\"status\":\"PENDENTE\",\"clienteId\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"motoristaId\":null,\"dataSolicitacao\":\"2026-11-03T18:46:57.806Z\",\"dataColeta\":null,\"dataPagamento\":null,\"cliente\":{\"nome\":\"João Silva\",\"endereco\":\"Rua das Flores, 123\"}}]",
+      "time": 1596,
+      "size": 389,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899892238",
+    "timestamp": 1793899892238,
+    "request": {
+      "id": "1793899892202",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/:58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "197",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:31:32 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/:58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 34,
+      "size": 197,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899894636",
+    "timestamp": 1793899894636,
+    "request": {
+      "id": "1793899894622",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/:58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "197",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:31:34 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/:58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 11,
+      "size": 197,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899904692",
+    "timestamp": 1793899904692,
+    "request": {
+      "id": "1793899904678",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/id:58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "199",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:31:44 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/id:58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 11,
+      "size": 199,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899910272",
+    "timestamp": 1793899910272,
+    "request": {
+      "id": "1793899910259",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "196",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:31:50 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 10,
+      "size": 196,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899910806",
+    "timestamp": 1793899910806,
+    "request": {
+      "id": "1793899910792",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "196",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:31:50 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 11,
+      "size": 196,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899911073",
+    "timestamp": 1793899911073,
+    "request": {
+      "id": "1793899911060",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "196",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:31:51 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 11,
+      "size": 196,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899911277",
+    "timestamp": 1793899911277,
+    "request": {
+      "id": "1793899911263",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "196",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:31:51 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 10,
+      "size": 196,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899911485",
+    "timestamp": 1793899911485,
+    "request": {
+      "id": "1793899911472",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "196",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:31:51 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 11,
+      "size": 196,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899911700",
+    "timestamp": 1793899911700,
+    "request": {
+      "id": "1793899911685",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "196",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:31:51 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 12,
+      "size": 196,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899911893",
+    "timestamp": 1793899911893,
+    "request": {
+      "id": "1793899911879",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "196",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:31:51 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 11,
+      "size": 196,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793899931166",
+    "timestamp": 1793899931166,
+    "request": {
+      "id": "1793899931153",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "196",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:32:11 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar</pre>\n</body>\n</html>\n",
+      "time": 10,
+      "size": 196,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793900552738",
+    "timestamp": 1793900552738,
+    "request": {
+      "id": "1793900551469",
+      "name": "New Request",
+      "method": "PUT",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/coletar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "343",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:42:32 GMT",
+        "etag": "W/\"157-7dVQx2JtTyezAsdjX1E9j71A6Ws\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"id\":\"58c187a1-24f6-4402-9e17-62e28ac6ca4b\",\"codigoPET\":\"PET-8065\",\"quantidadeGarrafas\":12,\"enderecoColeta\":\"Rua das Flores, 123 - Bairro Centro\",\"status\":\"COLETADO\",\"clienteId\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"motoristaId\":null,\"dataSolicitacao\":\"2026-11-03T18:46:57.806Z\",\"dataColeta\":\"2026-11-05T17:42:31.480Z\",\"dataPagamento\":null}",
+      "time": 1266,
+      "size": 343,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793901141354",
+    "timestamp": 1793901141354,
+    "request": {
+      "id": "1793901141346",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John2 Teste\",\n  \"email\": \"john2@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"211.322.333-44\",\n  \"role\": \"GESTOR\",\n  \"endereco\": \"Rua das Rosas, 124\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: Request with GET/HEAD method cannot have body.",
+      "time": 5,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793901150123",
+    "timestamp": 1793901150123,
+    "request": {
+      "id": "1793901148564",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John2 Teste\",\n  \"email\": \"john2@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"211.322.333-44\",\n  \"role\": \"GESTOR\",\n  \"endereco\": \"Rua das Rosas, 124\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "519",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:52:30 GMT",
+        "etag": "W/\"207-LFvA8kEpn56ZF/fcFRHbpFEkcfk\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo\",\"usuario\":{\"id\":\"0f588097-b848-4d1b-9541-fc773eb35536\",\"nome\":\"John2 Teste\",\"cpf\":\"211.322.333-44\",\"email\":\"john2@email.com\",\"role\":\"GESTOR\",\"pix\":null,\"endereco\":\"Rua das Rosas, 124\",\"criadoEm\":\"2026-11-03T17:42:42.380Z\"}}",
+      "time": 1557,
+      "size": 519,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793901184666",
+    "timestamp": 1793901184666,
+    "request": {
+      "id": "1793901182387",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "429",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:53:04 GMT",
+        "etag": "W/\"1ad-SyAGMNUPrTRxBeDLQMe4vn+wW0o\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"58c187a1-24f6-4402-9e17-62e28ac6ca4b\",\"codigoPET\":\"PET-8065\",\"quantidadeGarrafas\":12,\"enderecoColeta\":\"Rua das Flores, 123 - Bairro Centro\",\"status\":\"COLETADO\",\"clienteId\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"motoristaId\":null,\"dataSolicitacao\":\"2026-11-03T18:46:57.806Z\",\"dataColeta\":\"2026-11-05T17:42:31.480Z\",\"dataPagamento\":null,\"cliente\":{\"nome\":\"João Silva\",\"cpf\":\"111.222.333-44\",\"pix\":null},\"motorista\":null}]",
+      "time": 2277,
+      "size": 429,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793901236293",
+    "timestamp": 1793901236293,
+    "request": {
+      "id": "1793901236279",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/pagar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 404,
+      "statusText": "Not Found",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "194",
+        "content-security-policy": "default-src 'none'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:53:56 GMT",
+        "keep-alive": "timeout=5",
+        "x-content-type-options": "nosniff",
+        "x-powered-by": "Express"
+      },
+      "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/pagar</pre>\n</body>\n</html>\n",
+      "time": 11,
+      "size": 194,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793901241697",
+    "timestamp": 1793901241697,
+    "request": {
+      "id": "1793901240570",
+      "name": "New Request",
+      "method": "PUT",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/pagar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "361",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Thu, 05 Nov 2026 17:54:01 GMT",
+        "etag": "W/\"169-IEQe1/1NhLvUW97lLVm+z3D1rEw\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"id\":\"58c187a1-24f6-4402-9e17-62e28ac6ca4b\",\"codigoPET\":\"PET-8065\",\"quantidadeGarrafas\":12,\"enderecoColeta\":\"Rua das Flores, 123 - Bairro Centro\",\"status\":\"PAGO\",\"clienteId\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"motoristaId\":null,\"dataSolicitacao\":\"2026-11-03T18:46:57.806Z\",\"dataColeta\":\"2026-11-05T17:42:31.480Z\",\"dataPagamento\":\"2026-11-05T17:54:00.580Z\"}",
+      "time": 1124,
+      "size": 361,
+      "cookies": []
+    }
   }
 ]

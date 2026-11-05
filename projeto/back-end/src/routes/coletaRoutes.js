@@ -23,9 +23,9 @@ module.exports = router;
 
 /*
 Rotas pra Testar:
-GET de coletas (CLIENTE): http://localhost:5000/api/minhas-coletas
-POST de coletas (CLIENTE)(solicitar coleta):  http://localhost:5000/api/coletas
-PUT pra confirmar coleta e concluir(MOTORISTA): http://localhost:5000/api/coletas/:id/coletar
+GET de coletas (CLIENTE) GET : http://localhost:5000/api/minhas-coletas
+POST de coletas (CLIENTE) POST (solicitar coleta):  http://localhost:5000/api/coletas
+PUT pra confirmar coleta e concluir PUT (MOTORISTA): http://localhost:5000/api/coletas/:id/coletar
 PUT pra confirmar pagamento(GESTOR): http://localhost:5000/api/coletas/:id/pagar
 GET de coletas(GESTOR): http://localhost:5000/api/coletas
 
