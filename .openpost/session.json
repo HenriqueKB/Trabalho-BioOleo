@@ -39,21 +39,12 @@
       "certificateConfig": null,
       "inheritCertificate": false,
       "response": {
-        "status": 200,
-        "statusText": "OK",
-        "headers": {
-          "access-control-allow-origin": "*",
-          "connection": "keep-alive",
-          "content-length": "429",
-          "content-type": "application/json; charset=utf-8",
-          "date": "Thu, 05 Nov 2026 17:53:04 GMT",
-          "etag": "W/\"1ad-SyAGMNUPrTRxBeDLQMe4vn+wW0o\"",
-          "keep-alive": "timeout=5",
-          "x-powered-by": "Express"
-        },
-        "body": "[{\"id\":\"58c187a1-24f6-4402-9e17-62e28ac6ca4b\",\"codigoPET\":\"PET-8065\",\"quantidadeGarrafas\":12,\"enderecoColeta\":\"Rua das Flores, 123 - Bairro Centro\",\"status\":\"COLETADO\",\"clienteId\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"motoristaId\":null,\"dataSolicitacao\":\"2026-11-03T18:46:57.806Z\",\"dataColeta\":\"2026-11-05T17:42:31.480Z\",\"dataPagamento\":null,\"cliente\":{\"nome\":\"João Silva\",\"cpf\":\"111.222.333-44\",\"pix\":null},\"motorista\":null}]",
-        "time": 2277,
-        "size": 429,
+        "status": 0,
+        "statusText": "Error",
+        "headers": {},
+        "body": "Request failed: fetch failed",
+        "time": 9,
+        "size": 0,
         "actualRequest": {
           "method": "GET",
           "url": "http://localhost:5000/api/coletas",
@@ -62,7 +53,6 @@
             "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo"
           },
           "body": null,
-          "protocol": "HTTP/1.1",
           "certificateNames": "System Trust Store"
         },
         "cookies": [],
@@ -77,7 +67,7 @@
           },
           {
             "name": "HTTP Request",
-            "duration": 2277
+            "duration": 9
           },
           {
             "name": "Post-processing",
@@ -250,13 +240,13 @@
           "connection": "keep-alive",
           "content-length": "552",
           "content-type": "application/json; charset=utf-8",
-          "date": "Thu, 05 Nov 2026 17:22:23 GMT",
-          "etag": "W/\"228-YSXhzCtN29kC8bZd6QS3JNUatIo\"",
+          "date": "Fri, 06 Nov 2026 18:32:27 GMT",
+          "etag": "W/\"228-96fHHZlQiihA2uJMPSgRLF+5/QE\"",
           "keep-alive": "timeout=5",
           "x-powered-by": "Express"
         },
-        "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
-        "time": 1904,
+        "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzOTg5OTQ3LCJleHAiOjE3OTQwMTg3NDd9.pJ7XGbJacXxizthbfH0ejoHBgZdPx-pNmgKS4QG76xw\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
+        "time": 1563,
         "size": 552,
         "actualRequest": {
           "method": "POST",
@@ -281,7 +271,7 @@
           },
           {
             "name": "HTTP Request",
-            "duration": 1904
+            "duration": 1563
           },
           {
             "name": "Post-processing",
@@ -763,21 +753,12 @@
       "certificateConfig": null,
       "inheritCertificate": false,
       "response": {
-        "status": 200,
-        "statusText": "OK",
-        "headers": {
-          "access-control-allow-origin": "*",
-          "connection": "keep-alive",
-          "content-length": "361",
-          "content-type": "application/json; charset=utf-8",
-          "date": "Thu, 05 Nov 2026 17:54:01 GMT",
-          "etag": "W/\"169-IEQe1/1NhLvUW97lLVm+z3D1rEw\"",
-          "keep-alive": "timeout=5",
-          "x-powered-by": "Express"
-        },
-        "body": "{\"id\":\"58c187a1-24f6-4402-9e17-62e28ac6ca4b\",\"codigoPET\":\"PET-8065\",\"quantidadeGarrafas\":12,\"enderecoColeta\":\"Rua das Flores, 123 - Bairro Centro\",\"status\":\"PAGO\",\"clienteId\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"motoristaId\":null,\"dataSolicitacao\":\"2026-11-03T18:46:57.806Z\",\"dataColeta\":\"2026-11-05T17:42:31.480Z\",\"dataPagamento\":\"2026-11-05T17:54:00.580Z\"}",
-        "time": 1124,
-        "size": 361,
+        "status": 0,
+        "statusText": "Error",
+        "headers": {},
+        "body": "Request failed: fetch failed",
+        "time": 9,
+        "size": 0,
         "actualRequest": {
           "method": "PUT",
           "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/pagar",
@@ -787,7 +768,6 @@
             "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo"
           },
           "body": null,
-          "protocol": "HTTP/1.1",
           "certificateNames": "System Trust Store"
         },
         "cookies": [],
@@ -802,7 +782,7 @@
           },
           {
             "name": "HTTP Request",
-            "duration": 1124
+            "duration": 9
           },
           {
             "name": "Post-processing",
@@ -828,7 +808,7 @@
     }
   ],
   "groups": [],
-  "activeTabId": "1793901159789uxwk",
+  "activeTabId": "179372743466527ie",
   "currentView": "requests",
   "sidebarTab": "collections",
   "sidebarCollapsed": true,

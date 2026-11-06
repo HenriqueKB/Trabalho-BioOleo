@@ -2,7 +2,7 @@ const prisma = require('../config/prisma');
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'biooleo_secret_key';
+const JWT_SECRET = process.env.JWT_SECRET
 
 // Hash vai deixar a senha BEM feia, mas ao mesmo tempo, se tiver dois usuários com a mesma senha, ambos terão o mesmo hash, e hackers já possuem tabelas com hashs de senhas comuns, já sabe onde quero chegar com isso.
 // Salt vai basicamente impedir essa repetição de hash, se dois usuários tiverem a mesma, com o salt eles NÃO terão o mesmo hash.
@@ -110,12 +110,11 @@ exports.login = async (req, res) => {
     }
 
     // 3. Emite o JWT contendo a Role
-    const token = jwt.sign(
-      { id: usuario.id, email: usuario.email, role: usuario.role },
-      JWT_SECRET,
-      { expiresIn: '1h' }
-    );
-
+  const token = jwt.sign(
+    { id: usuario.id, email: usuario.email, role: usuario.role },
+    process.env.JWT_SECRET,
+    { expiresIn: process.env.JWT_EXPIRES_IN || '1h' }
+  );
     const { senha: _, ...usuarioSemSenha } = usuario;
 
     return res.status(200).json({

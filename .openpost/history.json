@@ -1124,55 +1124,6 @@
     }
   },
   {
-    "id": "1792504783748",
-    "timestamp": 1792504783748,
-    "request": {
-      "id": "1792504782463",
-      "name": "New Request",
-      "method": "POST",
-      "url": "http://localhost:5000/api/usuarios/login",
-      "params": [],
-      "headers": [
-        {
-          "key": "Accept",
-          "value": "application/json",
-          "enabled": true
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/json",
-          "enabled": true
-        }
-      ],
-      "body": {
-        "type": "json",
-        "raw": "{\n  \"email\": \"joao@email.com\",\n  \"senha\": \"123456password\"\n}"
-      },
-      "auth": {
-        "type": "none"
-      },
-      "inheritAuth": true
-    },
-    "response": {
-      "status": 200,
-      "statusText": "OK",
-      "headers": {
-        "access-control-allow-origin": "*",
-        "connection": "keep-alive",
-        "content-length": "520",
-        "content-type": "application/json; charset=utf-8",
-        "date": "Tue, 20 Oct 2026 13:59:43 GMT",
-        "etag": "W/\"208-VULog2jIRFFFTladJywthqEO5HE\"",
-        "keep-alive": "timeout=5",
-        "x-powered-by": "Express"
-      },
-      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MjUwNDc4MywiZXhwIjoxNzkyNTA4MzgzfQ.hA1BMGion3QPnNf1X60ff_MF3kDxIR0RJFjpIlhyVKQ\",\"usuario\":{\"id\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"nome\":\"João Silva\",\"cpf\":\"111.222.333-44\",\"email\":\"joao@email.com\",\"role\":\"CLIENTE\",\"pix\":null,\"endereco\":\"Rua das Flores, 123\",\"criadoEm\":\"2026-10-20T13:56:05.588Z\"}}",
-      "time": 1283,
-      "size": 520,
-      "cookies": []
-    }
-  },
-  {
     "id": "1792504845686",
     "timestamp": 1792504845686,
     "request": {
@@ -1879,55 +1830,6 @@
     }
   },
   {
-    "id": "1793727863630",
-    "timestamp": 1793727863630,
-    "request": {
-      "id": "1793727862295",
-      "name": "New Request",
-      "method": "POST",
-      "url": "http://localhost:5000/api/usuarios/login",
-      "params": [],
-      "headers": [
-        {
-          "key": "Accept",
-          "value": "application/json",
-          "enabled": true
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/json",
-          "enabled": true
-        }
-      ],
-      "body": {
-        "type": "json",
-        "raw": "{\n  \"email\": \"john2@email.com\",\n  \"senha\": \"1234pass\"\n}"
-      },
-      "auth": {
-        "type": "none"
-      },
-      "inheritAuth": true
-    },
-    "response": {
-      "status": 200,
-      "statusText": "OK",
-      "headers": {
-        "access-control-allow-origin": "*",
-        "connection": "keep-alive",
-        "content-length": "519",
-        "content-type": "application/json; charset=utf-8",
-        "date": "Tue, 03 Nov 2026 17:44:23 GMT",
-        "etag": "W/\"207-W3YDHCoSMHe79XM6O/d1mtpDSus\"",
-        "keep-alive": "timeout=5",
-        "x-powered-by": "Express"
-      },
-      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzcyNzg2MywiZXhwIjoxNzkzNzMxNDYzfQ.eaTBUupu5Tl04_0uFlX5ihyZhxQpfw51UZtB_VAYXeI\",\"usuario\":{\"id\":\"0f588097-b848-4d1b-9541-fc773eb35536\",\"nome\":\"John2 Teste\",\"cpf\":\"211.322.333-44\",\"email\":\"john2@email.com\",\"role\":\"GESTOR\",\"pix\":null,\"endereco\":\"Rua das Rosas, 124\",\"criadoEm\":\"2026-11-03T17:42:42.380Z\"}}",
-      "time": 1332,
-      "size": 519,
-      "cookies": []
-    }
-  },
-  {
     "id": "1793727878452",
     "timestamp": 1793727878452,
     "request": {
@@ -2029,55 +1931,6 @@
     }
   },
   {
-    "id": "1793728603414",
-    "timestamp": 1793728603414,
-    "request": {
-      "id": "1793728602149",
-      "name": "New Request",
-      "method": "POST",
-      "url": "http://localhost:5000/api/usuarios/login",
-      "params": [],
-      "headers": [
-        {
-          "key": "Accept",
-          "value": "application/json",
-          "enabled": true
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/json",
-          "enabled": true
-        }
-      ],
-      "body": {
-        "type": "json",
-        "raw": "    {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
-      },
-      "auth": {
-        "type": "none"
-      },
-      "inheritAuth": true
-    },
-    "response": {
-      "status": 200,
-      "statusText": "OK",
-      "headers": {
-        "access-control-allow-origin": "*",
-        "connection": "keep-alive",
-        "content-length": "552",
-        "content-type": "application/json; charset=utf-8",
-        "date": "Tue, 03 Nov 2026 17:56:43 GMT",
-        "etag": "W/\"228-0mph17M36R86JnEfNhvkDXUMqI8\"",
-        "keep-alive": "timeout=5",
-        "x-powered-by": "Express"
-      },
-      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzNzI4NjAzLCJleHAiOjE3OTM3MzIyMDN9.fn7u8vrwltkg0eioPAEoSStbZhDVzMKJ-EO0M75rHgw\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
-      "time": 1261,
-      "size": 552,
-      "cookies": []
-    }
-  },
-  {
     "id": "1793728616849",
     "timestamp": 1793728616849,
     "request": {
@@ -2126,55 +1979,6 @@
       "body": "{\"error\":\"Acesso negado. Perfil sem permissão para esta ação.\"}",
       "time": 12,
       "size": 66,
-      "cookies": []
-    }
-  },
-  {
-    "id": "1793731468038",
-    "timestamp": 1793731468038,
-    "request": {
-      "id": "1793731466487",
-      "name": "New Request",
-      "method": "POST",
-      "url": "http://localhost:5000/api/usuarios/login",
-      "params": [],
-      "headers": [
-        {
-          "key": "Accept",
-          "value": "application/json",
-          "enabled": true
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/json",
-          "enabled": true
-        }
-      ],
-      "body": {
-        "type": "json",
-        "raw": "{\n  \"nome\": \"João Silva\",\n  \"email\": \"joao@email.com\",\n  \"senha\": \"123456password\",\n  \"cpf\": \"111.222.333-44\",\n  \"role\": \"CLIENTE\",\n  \"endereco\": \"Rua das Flores, 123\"\n}"
-      },
-      "auth": {
-        "type": "none"
-      },
-      "inheritAuth": true
-    },
-    "response": {
-      "status": 200,
-      "statusText": "OK",
-      "headers": {
-        "access-control-allow-origin": "*",
-        "connection": "keep-alive",
-        "content-length": "520",
-        "content-type": "application/json; charset=utf-8",
-        "date": "Tue, 03 Nov 2026 18:44:28 GMT",
-        "etag": "W/\"208-ugmWnMFSHdESxVa1S5V/724s7ns\"",
-        "keep-alive": "timeout=5",
-        "x-powered-by": "Express"
-      },
-      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIxOTJjNDlhLWFhODktNDZkYy1iYTUyLTViOGFiM2Y1MTVkNiIsImVtYWlsIjoiam9hb0BlbWFpbC5jb20iLCJyb2xlIjoiQ0xJRU5URSIsImlhdCI6MTc5MzczMTQ2OCwiZXhwIjoxNzkzNzM1MDY4fQ.VJQqeRpxJfSb5-Pk4LEHYcW58DQusbT35gJO6-66Bj4\",\"usuario\":{\"id\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"nome\":\"João Silva\",\"cpf\":\"111.222.333-44\",\"email\":\"joao@email.com\",\"role\":\"CLIENTE\",\"pix\":null,\"endereco\":\"Rua das Flores, 123\",\"criadoEm\":\"2026-10-20T13:56:05.588Z\"}}",
-      "time": 1547,
-      "size": 520,
       "cookies": []
     }
   },
@@ -2369,55 +2173,6 @@
       "body": "Request failed: Failed to parse URL from /api/usuarios/login",
       "time": 10,
       "size": 0,
-      "cookies": []
-    }
-  },
-  {
-    "id": "1793731677364",
-    "timestamp": 1793731677364,
-    "request": {
-      "id": "1793731675866",
-      "name": "New Request",
-      "method": "POST",
-      "url": "http://localhost:5000/api/usuarios/login",
-      "params": [],
-      "headers": [
-        {
-          "key": "Accept",
-          "value": "application/json",
-          "enabled": true
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/json",
-          "enabled": true
-        }
-      ],
-      "body": {
-        "type": "json",
-        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
-      },
-      "auth": {
-        "type": "none"
-      },
-      "inheritAuth": true
-    },
-    "response": {
-      "status": 200,
-      "statusText": "OK",
-      "headers": {
-        "access-control-allow-origin": "*",
-        "connection": "keep-alive",
-        "content-length": "552",
-        "content-type": "application/json; charset=utf-8",
-        "date": "Tue, 03 Nov 2026 18:47:57 GMT",
-        "etag": "W/\"228-wpZXue5CIqltG+Jv0CTrKhEu38o\"",
-        "keep-alive": "timeout=5",
-        "x-powered-by": "Express"
-      },
-      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzNzMxNjc3LCJleHAiOjE3OTM3MzUyNzd9.Q6plwXrNzWmfBzuzFljMPCpSAbYQuKV-VVQCMfLfhNQ\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
-      "time": 1494,
-      "size": 552,
       "cookies": []
     }
   },
@@ -2729,55 +2484,6 @@
       "body": "[{\"id\":\"58c187a1-24f6-4402-9e17-62e28ac6ca4b\",\"codigoPET\":\"PET-8065\",\"quantidadeGarrafas\":12,\"enderecoColeta\":\"Rua das Flores, 123 - Bairro Centro\",\"status\":\"PENDENTE\",\"clienteId\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"motoristaId\":null,\"dataSolicitacao\":\"2026-11-03T18:46:57.806Z\",\"dataColeta\":null,\"dataPagamento\":null}]",
       "time": 1484,
       "size": 323,
-      "cookies": []
-    }
-  },
-  {
-    "id": "1793899343400",
-    "timestamp": 1793899343400,
-    "request": {
-      "id": "1793899341490",
-      "name": "New Request",
-      "method": "POST",
-      "url": "http://localhost:5000/api/usuarios/login",
-      "params": [],
-      "headers": [
-        {
-          "key": "Accept",
-          "value": "application/json",
-          "enabled": true
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/json",
-          "enabled": true
-        }
-      ],
-      "body": {
-        "type": "json",
-        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
-      },
-      "auth": {
-        "type": "none"
-      },
-      "inheritAuth": true
-    },
-    "response": {
-      "status": 200,
-      "statusText": "OK",
-      "headers": {
-        "access-control-allow-origin": "*",
-        "connection": "keep-alive",
-        "content-length": "552",
-        "content-type": "application/json; charset=utf-8",
-        "date": "Thu, 05 Nov 2026 17:22:23 GMT",
-        "etag": "W/\"228-YSXhzCtN29kC8bZd6QS3JNUatIo\"",
-        "keep-alive": "timeout=5",
-        "x-powered-by": "Express"
-      },
-      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzODk5MzQzLCJleHAiOjE3OTM5MDI5NDN9.0KEbsTh86PZz7I26SkxX7DjLjdc1uM9q3x9IaM9cdQA\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
-      "time": 1904,
-      "size": 552,
       "cookies": []
     }
   },
@@ -3765,55 +3471,6 @@
     }
   },
   {
-    "id": "1793901150123",
-    "timestamp": 1793901150123,
-    "request": {
-      "id": "1793901148564",
-      "name": "New Request",
-      "method": "POST",
-      "url": "http://localhost:5000/api/usuarios/login",
-      "params": [],
-      "headers": [
-        {
-          "key": "Accept",
-          "value": "application/json",
-          "enabled": true
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/json",
-          "enabled": true
-        }
-      ],
-      "body": {
-        "type": "json",
-        "raw": "  {\n  \"nome\": \"John2 Teste\",\n  \"email\": \"john2@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"211.322.333-44\",\n  \"role\": \"GESTOR\",\n  \"endereco\": \"Rua das Rosas, 124\"\n}"
-      },
-      "auth": {
-        "type": "none"
-      },
-      "inheritAuth": true
-    },
-    "response": {
-      "status": 200,
-      "statusText": "OK",
-      "headers": {
-        "access-control-allow-origin": "*",
-        "connection": "keep-alive",
-        "content-length": "519",
-        "content-type": "application/json; charset=utf-8",
-        "date": "Thu, 05 Nov 2026 17:52:30 GMT",
-        "etag": "W/\"207-LFvA8kEpn56ZF/fcFRHbpFEkcfk\"",
-        "keep-alive": "timeout=5",
-        "x-powered-by": "Express"
-      },
-      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo\",\"usuario\":{\"id\":\"0f588097-b848-4d1b-9541-fc773eb35536\",\"nome\":\"John2 Teste\",\"cpf\":\"211.322.333-44\",\"email\":\"john2@email.com\",\"role\":\"GESTOR\",\"pix\":null,\"endereco\":\"Rua das Rosas, 124\",\"criadoEm\":\"2026-11-03T17:42:42.380Z\"}}",
-      "time": 1557,
-      "size": 519,
-      "cookies": []
-    }
-  },
-  {
     "id": "1793901184666",
     "timestamp": 1793901184666,
     "request": {
@@ -3975,6 +3632,961 @@
       "body": "{\"id\":\"58c187a1-24f6-4402-9e17-62e28ac6ca4b\",\"codigoPET\":\"PET-8065\",\"quantidadeGarrafas\":12,\"enderecoColeta\":\"Rua das Flores, 123 - Bairro Centro\",\"status\":\"PAGO\",\"clienteId\":\"2192c49a-aa89-46dc-ba52-5b8ab3f515d6\",\"motoristaId\":null,\"dataSolicitacao\":\"2026-11-03T18:46:57.806Z\",\"dataColeta\":\"2026-11-05T17:42:31.480Z\",\"dataPagamento\":\"2026-11-05T17:54:00.580Z\"}",
       "time": 1124,
       "size": 361,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988788965",
+    "timestamp": 1793988788965,
+    "request": {
+      "id": "1793988788919",
+      "name": "New Request",
+      "method": "PUT",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/pagar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 36,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988795046",
+    "timestamp": 1793988795046,
+    "request": {
+      "id": "1793988795034",
+      "name": "New Request",
+      "method": "PUT",
+      "url": "http://localhost:5000/api/coletas/58c187a1-24f6-4402-9e17-62e28ac6ca4b/pagar",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 9,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988801346",
+    "timestamp": 1793988801346,
+    "request": {
+      "id": "1793988801333",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:5000/api/coletas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n  \n}"
+      },
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBmNTg4MDk3LWI4NDgtNGQxYi05NTQxLWZjNzczZWIzNTUzNiIsImVtYWlsIjoiam9objJAZW1haWwuY29tIiwicm9sZSI6IkdFU1RPUiIsImlhdCI6MTc5MzkwMTE1MCwiZXhwIjoxNzkzOTA0NzUwfQ._iSQsvp3o6WZOH6WzTE-6WeiRIU_KhUrCQrPMHabELo"
+        }
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 9,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988840035",
+    "timestamp": 1793988840035,
+    "request": {
+      "id": "1793988840024",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 9,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988840182",
+    "timestamp": 1793988840182,
+    "request": {
+      "id": "1793988840169",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 11,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988840304",
+    "timestamp": 1793988840304,
+    "request": {
+      "id": "1793988840293",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 8,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988840415",
+    "timestamp": 1793988840415,
+    "request": {
+      "id": "1793988840405",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 8,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988840543",
+    "timestamp": 1793988840543,
+    "request": {
+      "id": "1793988840532",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 8,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988840672",
+    "timestamp": 1793988840672,
+    "request": {
+      "id": "1793988840660",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 10,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988863173",
+    "timestamp": 1793988863173,
+    "request": {
+      "id": "1793988863159",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 11,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988863684",
+    "timestamp": 1793988863684,
+    "request": {
+      "id": "1793988863673",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 8,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988863823",
+    "timestamp": 1793988863823,
+    "request": {
+      "id": "1793988863811",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 9,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988863966",
+    "timestamp": 1793988863966,
+    "request": {
+      "id": "1793988863952",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 11,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988877507",
+    "timestamp": 1793988877507,
+    "request": {
+      "id": "1793988877495",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 8,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988877938",
+    "timestamp": 1793988877938,
+    "request": {
+      "id": "1793988877927",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 8,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988878087",
+    "timestamp": 1793988878087,
+    "request": {
+      "id": "1793988878071",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 13,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988878227",
+    "timestamp": 1793988878227,
+    "request": {
+      "id": "1793988878215",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 9,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988878356",
+    "timestamp": 1793988878356,
+    "request": {
+      "id": "1793988878344",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 9,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988878600",
+    "timestamp": 1793988878600,
+    "request": {
+      "id": "1793988878575",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 17,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988878827",
+    "timestamp": 1793988878827,
+    "request": {
+      "id": "1793988878817",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 8,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793988878975",
+    "timestamp": 1793988878975,
+    "request": {
+      "id": "1793988878964",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 8,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793989794249",
+    "timestamp": 1793989794249,
+    "request": {
+      "id": "1793989792512",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "552",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 06 Nov 2026 18:29:54 GMT",
+        "etag": "W/\"228-vRnM8ZkZ+X0hwmnk5y8QL/oCyHc\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzOTg5Nzk0LCJleHAiOjE3OTQwMTg1OTR9.F4NzkCDZQ5g-jgy3SUhFiI8lVGbkxfGgILT2H7tzOfM\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
+      "time": 1733,
+      "size": 552,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1793989947595",
+    "timestamp": 1793989947595,
+    "request": {
+      "id": "1793989946028",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:5000/api/usuarios/login",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n  \"nome\": \"John Motorista\",\n  \"email\": \"johnmotorista@email.com\",\n  \"senha\": \"1234pass\",\n  \"cpf\": \"212.322.333-44\",\n  \"role\": \"MOTORISTA\",\n  \"endereco\": \"Rua dos Girassóis, 125\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-origin": "*",
+        "connection": "keep-alive",
+        "content-length": "552",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 06 Nov 2026 18:32:27 GMT",
+        "etag": "W/\"228-96fHHZlQiihA2uJMPSgRLF+5/QE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "{\"mensagem\":\"Login efetuado com sucesso!\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZkMjllOTE3LTY2MzQtNDY5MC05NmNiLTM5YjI4Mzk3ZjU5YiIsImVtYWlsIjoiam9obm1vdG9yaXN0YUBlbWFpbC5jb20iLCJyb2xlIjoiTU9UT1JJU1RBIiwiaWF0IjoxNzkzOTg5OTQ3LCJleHAiOjE3OTQwMTg3NDd9.pJ7XGbJacXxizthbfH0ejoHBgZdPx-pNmgKS4QG76xw\",\"usuario\":{\"id\":\"fd29e917-6634-4690-96cb-39b28397f59b\",\"nome\":\"John Motorista\",\"cpf\":\"212.322.333-44\",\"email\":\"johnmotorista@email.com\",\"role\":\"MOTORISTA\",\"pix\":null,\"endereco\":\"Rua dos Girassóis, 125\",\"criadoEm\":\"2026-11-03T17:56:30.685Z\"}}",
+      "time": 1563,
+      "size": 552,
       "cookies": []
     }
   }

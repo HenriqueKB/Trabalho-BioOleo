@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'biooleo_secret_key';
+const JWT_SECRET = process.env.JWT_SECRET|| 'biooleo_secret_key';
 
 // 1. Verifica se o token existe, é válido e não expirou
 exports.autenticar = (req, res, next) => {
@@ -29,8 +29,12 @@ exports.autenticar = (req, res, next) => {
     // Permite que a requisição siga para o próximo passo (controller)
     return next();
   } catch (error) {
-    return res.status(401).json({ error: 'Token inválido ou expirado.' });
+    if (error.name === 'TokenExpiredError') {
+    return res.status(401).json({ error: 'Sua sessão expirou. Por favor, faça login novamente.' });
   }
+
+  return res.status(401).json({ error: 'Token inválido.' });
+}
 };
 
 // 2. Restringe o acesso apenas aos perfis (roles) informados
